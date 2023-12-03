@@ -1,6 +1,8 @@
-# iA Writer Templates
+# iA Writer APA Template
 
-Preview, create PDFs, and print documents in your own style with templates in iA Writer.
+This is a fork of [iA Writer Templates](https://github.com/iainc/iA-Writer-Templates) to preview, create PDFs, and print documents in APA 7 style with iA Writer.
+
+I started with their [Academic MLA](https://ia.net/downloads#templates) template to build a version that satisfies [American Psychological Association 7th edition](https://apastyle.apa.org/) citation style.
 
 Templates are built with web pages. You can use HTML, CSS, and JavaScript to lay out your documents. If you know how to make a web site, you can easily make an iA Writer template.
 
