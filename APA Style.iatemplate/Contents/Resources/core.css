@@ -25,31 +25,31 @@
 
 /* Regular versions on OS X, slim versions on iOS (assumes iOS will never have regular versions) */
 @font-face {
-  font-family: "NittiPro";
+  font-family: "Arial", "Georgia", "Times New Roman", "Keyboard";
   font-weight: 300;
   font-style: normal;
-  src: local("NittiPro-SemiLight"), local("NittiPro-SemiLightSlim");
+  src: local("Arial"), local("Georgia");
 }
 
 @font-face {
-  font-family: "NittiPro";
+  font-family: "Arial", "Georgia", "Times New Roman", "Keyboard";
   font-weight: 300;
   font-style: italic;
-  src: local("NittiPro-SemiLightItalic"), local("NittiPro-SemiLightItalicSlim");
+  src: local("Arial"), local("Georgia");
 }
 
 @font-face {
-  font-family: "NittiPro";
+  font-family: "Arial", "Georgia", "Times New Roman", "Keyboard";
   font-weight: 500;
   font-style: normal;
-  src: local("NittiPro-Medium"), local("NittiPro-MediumSlim");
+  src: local("Arial"), local("Georgia");
 }
 
 @font-face {
-  font-family: "NittiPro";
+  font-family: "Arial", "Georgia", "Times New Roman", "Keyboard";
   font-weight: 500;
   font-style: italic;
-  src: local("NittiPro-MediumItalic"), local("NittiPro-MediumItalicSlim");
+  src: local("Arial"), local("Georgia");
 }
 /* BASE */
 

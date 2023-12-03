@@ -1,15 +1,15 @@
 /**
- * iA Writer Template “Academic”
+ * iA Writer Template “APA 7”
  *
- * font-family: TimesNewRomanPS
- * font-size:   15px iPhone 5, 16px iPhone 6+, 17px iPad, 17px Mac, 18px
+ * font-family: Arial
+ * font-size:   15px iPhone 5, 16px iPhone 6+, 17px iPad, 12px Mac, 12px
  * line-height: 1.6667 (30px @ font-size: 18px)
  * vert margin: 30px @ 1080px wide
  */
 
 /* From min-width: 80px */
 html {
-  font-family: "Times New Roman", "Keyboard", sans-serif;
+  font-family: "Arial", "Times New Roman", "Keyboard", sans-serif;
   font-weight: 300; /* SemiLight weight for non-Retina (@1x) */
   font-size: 1px; /* Overridden by responsive font sizing */
   line-height: 220%; /* 2.5 = 30px @ font-size: 18px */
