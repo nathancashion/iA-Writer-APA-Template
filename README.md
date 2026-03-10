@@ -9,7 +9,10 @@ Targets the **student paper** format: page-number-only header, student title pag
 1. Double-click `APA7.iatemplate` in Finder to install (or drag to the iA Writer Dock icon)
 2. In iA Writer, choose **Preferences → Templates → APA 7**
 3. Set your name in **Preferences → General → Author**
-4. Customize the title page placeholders (see [APA Style.md](APA%20Style.md) for details)
+4. Under **Printing & PDF Export**, make sure **Headers** and **Footers** are checked — this enables page numbers in the exported PDF
+5. Customize the title page placeholders (see [APA Style.md](APA%20Style.md) for details)
+
+![iA Writer Template Settings](APA7_iA_Writer_Settings.png)
 
 ## Markdown → APA Heading Mapping
 

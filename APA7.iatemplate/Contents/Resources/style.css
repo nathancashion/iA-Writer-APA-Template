@@ -8,7 +8,25 @@
 
 @page {
     size: 8.5in 11in;
-    margin: 1in;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Header — page number flush right (APA 7)
+   -------------------------------------------------------------------------- */
+
+body.header {
+    padding: 36pt 1in 0 1in;
+    line-height: 1;
+}
+
+body.header p {
+    text-align: right;
+    text-indent: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -26,7 +44,7 @@ body {
     line-height: 2; /* double-spaced */
     text-align: left; /* ragged right per APA 7 */
     margin: 0;
-    padding: 0 1in; /* 1" horizontal margins; vertical margins via plist header/footer height */
+    padding: 0 1in; /* horizontal margins; vertical margins via @page */
     -webkit-text-size-adjust: 100%;
 }
 
