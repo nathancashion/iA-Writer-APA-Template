@@ -1,22 +1,38 @@
-# iA Writer APA Template
+# iA Writer APA 7 Template
 
-This is a fork of [iA Writer Templates](https://github.com/iainc/iA-Writer-Templates) to preview, create PDFs, and print documents in APA 7 style with iA Writer.
+An [iA Writer](https://ia.net/writer) template for previewing, exporting PDFs, and printing documents formatted per the [APA 7th Edition](https://apastyle.apa.org/) style guide.
 
-I started with their [Academic MLA](https://ia.net/downloads#templates) template to build a version that satisfies [American Psychological Association 7th edition](https://apastyle.apa.org/) citation style.
+Targets the **student paper** format: page-number-only header, student title page, 12pt Times New Roman, double-spaced, 1" margins, and all five APA heading levels.
 
-Templates are built with web pages. You can use HTML, CSS, and JavaScript to lay out your documents. If you know how to make a web site, you can easily make an iA Writer template.
+## Quick Start
 
-iA Writer templates are [bundles](https://developer.apple.com/library/mac/documentation/General/Conceptual/DevPedia-CocoaCore/Bundle.html): directories that group template files together. Bundles are natively supported by macOS and iOS. To browse template contents, right-click it in Finder and choose “Show Bundle Contents”.
+1. Double-click `APA7.iatemplate` in Finder to install (or drag to the iA Writer Dock icon)
+2. In iA Writer, choose **Preferences → Templates → APA 7**
+3. Set your name in **Preferences → General → Author**
+4. Customize the title page placeholders (see [APA Style.md](APA%20Style.md) for details)
+
+## Markdown → APA Heading Mapping
+
+| Markdown | APA Level | Format |
+|----------|-----------|--------|
+| `#`      | Level 1   | Centered, Bold |
+| `##`     | Level 2   | Flush Left, Bold |
+| `###`    | Level 3   | Flush Left, Bold Italic |
+| `####`   | Level 4   | Indented, Bold |
+| `#####`  | Level 5   | Indented, Bold Italic |
+
+See [APA Style.md](APA%20Style.md) for full usage instructions including block quotations, citations, and math.
+
+## Template Structure
 
 ```
-Example.iatemplate/
+APA7.iatemplate/
     Contents/
         Info.plist
         Resources/
             document.html
             title.html
             header.html
-            footer.html
             style.css
 ```
 

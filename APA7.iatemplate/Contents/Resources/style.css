@@ -1,0 +1,456 @@
+/* ==========================================================================
+   APA 7th Edition — iA Writer Template Stylesheet
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Page & Print
+   -------------------------------------------------------------------------- */
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+html {
+    color: #000;
+    background-color: #fff;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 2; /* double-spaced */
+    text-align: left; /* ragged right per APA 7 */
+    margin: 0;
+    padding: 0 1in; /* 1" horizontal margins; vertical margins via plist header/footer height */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Paragraphs
+   -------------------------------------------------------------------------- */
+
+p {
+    margin: 0;
+    padding: 0;
+    text-indent: 0.5in;
+}
+
+/* No indent on first paragraph after a heading or at the start of the body */
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+    text-indent: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Headings — APA 7 five-level system
+   Markdown mapping:
+     # (h1)  → Level 1: Centered, Bold
+     ## (h2) → Level 2: Flush Left, Bold
+     ### (h3) → Level 3: Flush Left, Bold Italic
+     #### (h4) → Level 4: Indented 0.5", Bold (period ending, inline — approximated)
+     ##### (h5) → Level 5: Indented 0.5", Bold Italic (period ending, inline — approx.)
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 2;
+    margin: 24pt 0 0 0; /* one double-spaced line before heading */
+    padding: 0;
+}
+
+/* Level 1 — Centered, Bold */
+h1 {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Title Page
+   The title page content lives in the markdown body (h1, h3, p block before
+   the first +++ page break).  These rules centre everything and push the
+   title ~3-4 double-spaced lines below the top margin per APA 7.
+   -------------------------------------------------------------------------- */
+
+body > h1:first-child {
+    margin-top: 72pt; /* ≈ 3 double-spaced lines below top margin */
+}
+
+body > h1:first-child + h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+body > h1:first-child + h3 + p,
+body > h1:first-child + p {
+    text-align: center;
+    text-indent: 0;
+    margin-top: 48pt; /* 2 double-spaced blank lines before author details */
+}
+
+/* Level 2 — Flush Left, Bold */
+h2 {
+    text-align: left;
+}
+
+/* Level 3 — Flush Left, Bold Italic */
+h3 {
+    text-align: left;
+    font-style: italic;
+}
+
+/* Level 4 — Indented, Bold
+   APA 7 specifies these as inline headings ending with a period.
+   CSS cannot merge a block h4 with the following p, so we approximate
+   with an indented standalone line. */
+h4 {
+    text-align: left;
+    text-indent: 0.5in;
+}
+
+/* Level 5 — Indented, Bold Italic */
+h5 {
+    text-align: left;
+    text-indent: 0.5in;
+    font-style: italic;
+}
+
+/* h6 — not defined by APA; style as Level 5 fallback */
+h6 {
+    text-align: left;
+    text-indent: 0.5in;
+    font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Block Quotations — 0.5" left indent, double-spaced, no quotation marks
+   -------------------------------------------------------------------------- */
+
+blockquote {
+    margin: 0 0 0 0.5in;
+    padding: 0;
+    font-style: normal;
+}
+
+blockquote p {
+    text-indent: 0;
+}
+
+/* Second and subsequent paragraphs in a block quote get additional indent */
+blockquote p + p {
+    text-indent: 0.5in;
+}
+
+/* --------------------------------------------------------------------------
+   Lists
+   -------------------------------------------------------------------------- */
+
+ul, ol {
+    margin: 0 0 0 0.5in;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li p {
+    text-indent: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Horizontal Rule
+   -------------------------------------------------------------------------- */
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Code
+   -------------------------------------------------------------------------- */
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10pt;
+}
+
+pre {
+    margin: 0 0 0 0.5in;
+    white-space: pre-wrap;
+}
+
+pre code {
+    font-size: 10pt;
+}
+
+/* --------------------------------------------------------------------------
+   Tables — APA 7 style
+   Number: bold, flush left
+   Title: italic, flush left, below number
+   Borders: horizontal only (top/bottom of head, bottom of table)
+   No vertical borders, no cell borders
+   -------------------------------------------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 2;
+    margin: 0;
+}
+
+caption {
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    caption-side: top;
+    padding: 0;
+    margin: 0;
+}
+
+thead {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+    padding: 4pt 8pt;
+    vertical-align: bottom;
+}
+
+td {
+    padding: 4pt 8pt;
+    vertical-align: top;
+}
+
+tbody {
+    border-bottom: 2px solid #000;
+}
+
+/* Remove all other borders */
+table, th, td {
+    border-left: none;
+    border-right: none;
+}
+
+/* --------------------------------------------------------------------------
+   Figures — APA 7 style
+   Number: bold, flush left
+   Title (figcaption): italic, flush left
+   -------------------------------------------------------------------------- */
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: left;
+}
+
+/* --------------------------------------------------------------------------
+   Footnotes & Citations (MultiMarkdown)
+   APA 7: References have hanging indent (0.5" left, -0.5" first line)
+   -------------------------------------------------------------------------- */
+
+.footnotes {
+    margin-top: 0;
+}
+
+.footnotes hr {
+    display: none;
+}
+
+.footnotes ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footnotes li {
+    padding-left: 0.5in;
+    text-indent: -0.5in; /* hanging indent */
+    margin: 0;
+}
+
+.footnotes li p {
+    text-indent: inherit;
+    display: inline;
+}
+
+/* Citation entries */
+.footnotes li.citation {
+    padding-left: 0.5in;
+    text-indent: -0.5in;
+}
+
+/* --------------------------------------------------------------------------
+   Images (standalone, not in figure)
+   -------------------------------------------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Title Page
+   -------------------------------------------------------------------------- */
+
+.title-page {
+    text-align: center;
+    padding: 72pt 1in 0 1in; /* 3 double-spaced lines down; 1" horizontal margins */
+    line-height: 2;
+}
+
+.title-page .title-block {
+    text-align: center;
+}
+
+.title-page h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.title-page p {
+    text-indent: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.title-page .placeholder {
+    color: #999;
+}
+
+/* --------------------------------------------------------------------------
+   Header (page number flush right)
+   -------------------------------------------------------------------------- */
+
+.header {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header p {
+    text-align: right;
+    text-indent: 0;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Strong / Emphasis
+   -------------------------------------------------------------------------- */
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* --------------------------------------------------------------------------
+   Night Mode (iA Writer Preview)
+   -------------------------------------------------------------------------- */
+
+.night-mode {
+    color: #ddd;
+    background-color: #1a1a1a;
+}
+
+.night-mode a {
+    color: #8ab4f8;
+}
+
+.night-mode .title-page .placeholder {
+    color: #666;
+}
+
+.night-mode hr {
+    border-top-color: #555;
+}
+
+.night-mode thead {
+    border-top-color: #ddd;
+    border-bottom-color: #888;
+}
+
+.night-mode tbody {
+    border-bottom-color: #ddd;
+}
+
+/* --------------------------------------------------------------------------
+   iOS Dynamic Font Sizes
+   -------------------------------------------------------------------------- */
+
+.content-size-xs   body { font-size: 9pt; }
+.content-size-s    body { font-size: 10pt; }
+.content-size-m    body { font-size: 11pt; }
+.content-size-l    body { font-size: 12pt; }
+.content-size-xl   body { font-size: 13pt; }
+.content-size-xxl  body { font-size: 14pt; }
+.content-size-xxxl body { font-size: 15pt; }
+
+.content-size-accessibility-m    body { font-size: 16pt; }
+.content-size-accessibility-l    body { font-size: 18pt; }
+.content-size-accessibility-xl   body { font-size: 20pt; }
+.content-size-accessibility-xxl  body { font-size: 22pt; }
+.content-size-accessibility-xxxl body { font-size: 24pt; }
+
+/* --------------------------------------------------------------------------
+   Print
+   -------------------------------------------------------------------------- */
+
+@media print {
+    html {
+        padding: 0;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
