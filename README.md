@@ -1,4 +1,4 @@
-# iA Writer APA 7 Template
+# APA 7 Template for iA Writer
 
 An [iA Writer](https://ia.net/writer) template for previewing, exporting PDFs, and printing documents formatted per the [APA 7th Edition](https://apastyle.apa.org/) style guide.
 
@@ -6,13 +6,12 @@ Targets the **student paper** format: page-number-only header, student title pag
 
 ## Quick Start
 
-1. Double-click `APA7.iatemplate` in Finder to install (or drag to the iA Writer Dock icon)
-2. In iA Writer, choose **Preferences → Templates → APA 7**
-3. Set your name in **Preferences → General → Author**
-4. Under **Printing & PDF Export**, make sure **Headers** and **Footers** are checked — this enables page numbers in the exported PDF
-5. Customize the title page placeholders (see [APA Style.md](APA%20Style.md) for details)
-
+1. Download `APA7.iatemplate` and double-click in Finder to install (or drag to the iA Writer Dock icon)
+2. In iA Writer, choose **Preferences → Templates** and make sure **Headers** and **Footers** are checked — this enables page numbers in the exported PDF 
 ![iA Writer Template Settings](APA7_iA_Writer_Settings.png)
+3. In **Preferences → Markdown** under the **Metadata** tab, set your name as the value for `Author`
+5. Customize any other title page placeholders (see [APA Style.md](APA%20Style.md) for details)
+
 
 ## Markdown → APA Heading Mapping
 
