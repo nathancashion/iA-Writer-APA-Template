@@ -2,6 +2,8 @@
 
 An [iA Writer](https://ia.net/writer) template for previewing, exporting PDFs, and printing documents formatted per the [APA 7th Edition](https://apastyle.apa.org/) style guide.
 
+![Example Paper Preview](ExamplePaperPreview.png)
+
 Targets the **student paper** format: page-number-only header, student title page, 12pt Times New Roman, double-spaced, 1" margins, and all five APA heading levels.
 
 ## Quick Start
